@@ -41,6 +41,8 @@ hackdonalds.inventory_form:
   path: '/hackdonalds/inventory'
   defaults:
     _form: 'Drupal\hackdonalds\Form\InventoryForm'
-    _title: 'BigHack Inventory'
+    _title: 'Inventory'
   requirements:
     _hackdonalds_access_check: 'TRUE'
+  options:
+    no_cache: 'TRUE'

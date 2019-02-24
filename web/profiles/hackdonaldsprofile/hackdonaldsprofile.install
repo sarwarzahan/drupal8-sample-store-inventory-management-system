@@ -8,6 +8,7 @@
 use Drupal\user\Entity\User;
 use Drupal\user\RoleInterface;
 use Drupal\shortcut\Entity\Shortcut;
+use Drupal\group\Entity\Group;
 
 /**
  * Implements hook_install().
@@ -32,6 +33,10 @@ function hackdonaldsprofile_install() {
   $user = User::load(1);
   $user->roles[] = 'administrator';
   $user->save();
+  
+  // Create head office user group
+  $head_office_group = Group::create(['label' => 'Head Office', 'type' => 'head_office']);
+  $head_office_group->save();
 
   // We install some menu links, so we have to rebuild the router, to ensure the
   // menu links are valid.

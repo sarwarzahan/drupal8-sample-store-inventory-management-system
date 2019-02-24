@@ -2,11 +2,8 @@
 
 namespace Drupal\hackdonalds\User;
 
-use Drupal\Core\Access\AccessResult;
 use Drupal\Core\Session\AccountInterface;
-use Drupal\Core\Routing\Access\AccessInterface;
 use Drupal\user\Entity\User;
-use Drupal\group\Entity\Group;
 
 
 /**
@@ -213,27 +210,22 @@ class HackdonaldsUser {
   
   public function checkUserRoute($route_name) {
     if ($route_name == 'hackdonalds.store_create_form' && ($this->isMemberHeadOffice() || $this->isAdministrator())) {
-      // Return 403 Access Denied page.  
       return true;
     }
 
     if ($route_name == 'hackdonalds.user_create_form' && ($this->isStoreUser() || $this->isMemberHeadOffice() || $this->isAdministrator())) {
-      // Return 403 Access Denied page.  
       return true;
     }
 
     if ($route_name == 'hackdonalds.inventory_form' && $this->isMemberOfStore()) {
-      // Return 403 Access Denied page.  
       return true;
     }
 
     if ($route_name == 'hackdonalds.store_list' && ($this->isMemberHeadOffice() || $this->isAdministrator())) {
-      // Return 403 Access Denied page.  
       return true;
     }
 
     if ($route_name == 'hackdonalds.store_delete' && ($this->isMemberHeadOffice() || $this->isAdministrator())) {
-      // Return 403 Access Denied page.  
       return true;
     }
 

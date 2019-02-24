@@ -6,7 +6,6 @@ use Drupal\Core\Form\FormBase;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Ajax\AjaxResponse;
 use Drupal\Core\Ajax\CloseModalDialogCommand;
-use Drupal\Core\Ajax\ReplaceCommand;
 
 /**
  * Description of ModalForm
@@ -86,6 +85,7 @@ class ModalForm extends FormBase {
     $command = new CloseModalDialogCommand();
     $response = new AjaxResponse();
     $response->addCommand($command);
+    
     return $response;
   }
 

@@ -4,10 +4,6 @@ namespace Drupal\hackdonalds\Form;
 
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Form\FormBase;
-use Drupal\node\Entity\Node;
-use Drupal\group\Entity\Group;
-use Drupal\user\Entity\User;
-use Symfony\Component\HttpFoundation\RedirectResponse;
 
 /**
  * Form handler for the user register forms.

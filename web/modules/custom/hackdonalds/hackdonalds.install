@@ -1,20 +1,11 @@
 <?php
 
 use Drupal\block\Entity\Block;
-use Drupal\block_content\Entity\BlockContent;
 
 /**
  * @file
  * Install, update and uninstall functions for the hackdonalds module.
  */
-
-/**
- * Implements hook_uninstall().
- */
-function hackdonalds_uninstall() {
-  // Clear book data out of the cache.
-  \Drupal::cache('data')->deleteAll();
-}
 
 /**
  * Implements hook_install().
@@ -28,4 +19,5 @@ function hackdonalds_install() {
     $block->disable();
     $block->save();
   }
+  
 }

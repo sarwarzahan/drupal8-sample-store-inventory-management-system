@@ -12,7 +12,6 @@ use Drupal\group\Entity\Group;
  */
 class HackdonaldsStore {
 
-
   public function getStoreById($storeId) {
     $nodes = \Drupal::entityTypeManager()
       ->getStorage('node')

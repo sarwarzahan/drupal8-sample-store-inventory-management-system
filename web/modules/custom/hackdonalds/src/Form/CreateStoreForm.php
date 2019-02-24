@@ -116,7 +116,6 @@ class CreateStoreForm extends FormBase {
     $messenger->addMessage('Store with StoreID: '. $storeid . ' and location: ' . $location . ' added');
     // Redirect to form
     $form_state->setRedirect('hackdonalds.store_create_form');
-
   }
 
 }
