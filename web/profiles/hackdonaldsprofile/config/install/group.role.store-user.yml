@@ -1,0 +1,14 @@
+uuid: 9315b095-674f-4405-93ba-8bc523dbbb83
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.store
+id: store-user
+label: User
+weight: 4
+internal: false
+audience: member
+group_type: store
+permissions_ui: true
+permissions: {  }

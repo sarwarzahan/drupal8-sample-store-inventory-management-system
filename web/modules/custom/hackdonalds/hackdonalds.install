@@ -1,0 +1,31 @@
+<?php
+
+use Drupal\block\Entity\Block;
+use Drupal\block_content\Entity\BlockContent;
+
+/**
+ * @file
+ * Install, update and uninstall functions for the hackdonalds module.
+ */
+
+/**
+ * Implements hook_uninstall().
+ */
+function hackdonalds_uninstall() {
+  // Clear book data out of the cache.
+  \Drupal::cache('data')->deleteAll();
+}
+
+/**
+ * Implements hook_install().
+ */
+function hackdonalds_install() {
+  /**
+   * Disable default blocks 
+   */
+  $blocks = Block::loadMultiple(array('bartik_search', 'bartik_tools', 'bartik_footer', 'bartik_powered'));
+  foreach ($blocks as $block) {
+    $block->disable();
+    $block->save();
+  }
+}

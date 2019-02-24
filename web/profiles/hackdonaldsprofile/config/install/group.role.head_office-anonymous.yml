@@ -1,0 +1,14 @@
+uuid: 44e7bfe7-3e78-456b-be9d-2b9ed08b8db2
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.head_office
+id: head_office-anonymous
+label: Anonymous
+weight: -102
+internal: true
+audience: anonymous
+group_type: head_office
+permissions_ui: true
+permissions: {  }

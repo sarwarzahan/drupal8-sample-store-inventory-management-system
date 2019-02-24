@@ -1,0 +1,22 @@
+uuid: d6b846d4-19e2-48c8-985d-782c611b9eab
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.group_content.group_roles
+    - group.content_type.head_office-group_membership
+id: group_content.head_office-group_membership.group_roles
+field_name: group_roles
+entity_type: group_content
+bundle: head_office-group_membership
+label: Roles
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'group_type:group_role'
+  handler_settings:
+    group_type_id: head_office
+field_type: entity_reference

@@ -1,0 +1,14 @@
+uuid: 1fae9712-dab4-4cc4-8fcd-c0bd7621331e
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.head_office
+id: head_office-member
+label: Member
+weight: -100
+internal: true
+audience: member
+group_type: head_office
+permissions_ui: true
+permissions: {  }

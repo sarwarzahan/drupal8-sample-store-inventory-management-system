@@ -1,0 +1,17 @@
+uuid: 70b6c50f-62e3-46e6-8d59-3265aa84f5f6
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Store
+type: store
+description: 'Hackdonalds Store'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

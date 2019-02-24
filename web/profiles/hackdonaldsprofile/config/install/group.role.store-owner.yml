@@ -1,0 +1,14 @@
+uuid: d7085751-4d09-4df4-94ea-489c08476f18
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.store
+id: store-owner
+label: Owner
+weight: 3
+internal: false
+audience: member
+group_type: store
+permissions_ui: true
+permissions: {  }

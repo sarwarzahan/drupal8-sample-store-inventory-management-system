@@ -1,0 +1,10 @@
+uuid: 50d3d0be-88dd-405a-b989-02191887ee1a
+langcode: en
+status: true
+dependencies: {  }
+id: head_office
+label: 'Head Office'
+description: ''
+creator_membership: false
+creator_wizard: false
+creator_roles: {  }

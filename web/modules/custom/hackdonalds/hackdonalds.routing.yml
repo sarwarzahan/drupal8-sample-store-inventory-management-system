@@ -1,0 +1,46 @@
+
+hackdonalds.store_list:
+  path: 'hackdonalds/storelist'
+  defaults:
+    _controller: 'Drupal\hackdonalds\Controller\HackDonaldsController::storelist'
+    _title: 'Store list'
+  requirements:
+    _hackdonalds_access_check: 'TRUE'
+  options:
+    no_cache: 'TRUE'
+    
+hackdonalds.store_delete:
+  path: 'hackdonalds/removestore/{node}'
+  defaults:
+    _controller: 'Drupal\hackdonalds\Controller\HackDonaldsController::openModalForm'
+    _title: 'Delete store'
+  options:
+    parameters:
+      node:
+        type: entity:node
+  requirements:
+    _hackdonalds_access_check: 'TRUE'
+
+hackdonalds.user_create_form:
+  path: '/hackdonalds/createuser'
+  defaults:
+    _form: 'Drupal\hackdonalds\Form\RegisterForm'
+    _title: 'Create user'
+  requirements:
+     _hackdonalds_access_check: 'TRUE'
+    
+hackdonalds.store_create_form:
+  path: '/hackdonalds/createstore'
+  defaults:
+    _form: 'Drupal\hackdonalds\Form\CreateStoreForm'
+    _title: 'Create Store'
+  requirements:
+    _hackdonalds_access_check: 'TRUE'
+    
+hackdonalds.inventory_form:
+  path: '/hackdonalds/inventory'
+  defaults:
+    _form: 'Drupal\hackdonalds\Form\InventoryForm'
+    _title: 'BigHack Inventory'
+  requirements:
+    _hackdonalds_access_check: 'TRUE'

@@ -1,0 +1,14 @@
+uuid: 8e40b4dc-ed2a-4b94-8e5c-9d7343018ef9
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.store
+id: store-member
+label: Member
+weight: -100
+internal: true
+audience: member
+group_type: store
+permissions_ui: true
+permissions: {  }

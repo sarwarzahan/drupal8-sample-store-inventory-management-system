@@ -1,0 +1,10 @@
+uuid: 4a5ee547-afb3-4460-87c7-0c0aedf30ab5
+langcode: en
+status: true
+dependencies: {  }
+id: store
+label: Store
+description: ''
+creator_membership: false
+creator_wizard: true
+creator_roles: {  }

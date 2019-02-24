@@ -1,0 +1,23 @@
+uuid: a493eaa7-da9a-48d2-8005-a688b7e3046e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_inventory
+    - node.type.store
+id: node.store.field_inventory
+field_name: field_inventory
+entity_type: node
+bundle: store
+label: Inventory
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

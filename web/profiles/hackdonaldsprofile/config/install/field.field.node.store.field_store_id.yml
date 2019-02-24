@@ -1,0 +1,19 @@
+uuid: 506745d4-8423-4e4a-90ac-85a02bd06078
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_store_id
+    - node.type.store
+id: node.store.field_store_id
+field_name: field_store_id
+entity_type: node
+bundle: store
+label: 'Store ID'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

@@ -1,0 +1,21 @@
+<h4>{{ title }}</h4>
+<table>
+    <thead>
+    <tr>
+      <th>Store ID</th>
+      <th>Location</th>
+      <th>Inventory</th>
+      <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for store in stores %}
+        <tr>
+            <td>{{ store.store_id }}</td>
+            <td>{{ store.location }}</td>
+            <td>{{ store.inventory }}</td>
+            <td><a href="removestore/{{ store.id }}" class="use-ajax " data-dialog-type="modal">Remove</a></td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>

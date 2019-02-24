@@ -1,0 +1,17 @@
+uuid: df0710dd-d181-47a2-87fb-d0fec2a9e9e3
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.store
+  enforced:
+    config:
+      - user.role.administrator
+id: store-a416e6833
+label: Administrator
+weight: 2
+internal: true
+audience: outsider
+group_type: store
+permissions_ui: false
+permissions: {  }

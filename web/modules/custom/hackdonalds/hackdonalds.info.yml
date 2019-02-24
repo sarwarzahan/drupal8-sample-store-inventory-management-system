@@ -1,0 +1,8 @@
+name: Hackdonalds Store Management
+description: Hackdonalds store management system
+type: module
+core: 8.x
+dependencies:
+  - drupal:user
+  - group
+  - gnode

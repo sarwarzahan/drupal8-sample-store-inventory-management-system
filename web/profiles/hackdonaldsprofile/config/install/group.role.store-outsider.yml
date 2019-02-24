@@ -1,0 +1,14 @@
+uuid: 952c9b16-06a1-4829-ad19-1db7aae77dec
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.store
+id: store-outsider
+label: Outsider
+weight: -101
+internal: true
+audience: outsider
+group_type: store
+permissions_ui: true
+permissions: {  }

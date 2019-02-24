@@ -1,0 +1,14 @@
+services:
+  hackdonalds.access_checker:
+    class: Drupal\hackdonalds\Access\CustomAccessCheck
+    arguments: ['@current_user']
+    tags:
+      - { name: access_check, applies_to: _hackdonalds_access_check }
+      
+  hackdonalds.user:
+    class: Drupal\hackdonalds\User\HackdonaldsUser
+    arguments: ['@current_user']
+    
+  hackdonalds.store:
+    class: Drupal\hackdonalds\Store\HackdonaldsStore
+      

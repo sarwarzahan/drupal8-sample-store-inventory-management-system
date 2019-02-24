@@ -1,0 +1,14 @@
+uuid: 23a53b2c-349b-43ce-ac2a-139c8076e20d
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.head_office
+id: head_office-outsider
+label: Outsider
+weight: -101
+internal: true
+audience: outsider
+group_type: head_office
+permissions_ui: true
+permissions: {  }

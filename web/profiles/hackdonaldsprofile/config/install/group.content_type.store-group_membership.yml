@@ -1,0 +1,17 @@
+uuid: 326bf58c-84b0-4b3f-b02f-a7734a636ccf
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.store
+  module:
+    - user
+id: store-group_membership
+label: 'Store: Group membership'
+description: 'Adds users to groups as members.'
+group_type: store
+content_plugin: group_membership
+plugin_config:
+  group_cardinality: 0
+  entity_cardinality: 1
+  use_creation_wizard: true

@@ -1,0 +1,45 @@
+uuid: 82b747a4-2971-48da-90d6-43130f929708
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.store.field_inventory
+    - field.field.node.store.field_location
+    - field.field.node.store.field_store_id
+    - node.type.store
+  module:
+    - user
+id: node.store.default
+targetEntityType: node
+bundle: store
+mode: default
+content:
+  field_inventory:
+    weight: 103
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_location:
+    weight: 102
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_store_id:
+    weight: 101
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }
