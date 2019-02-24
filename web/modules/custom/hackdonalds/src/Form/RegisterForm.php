@@ -103,7 +103,6 @@ class RegisterForm extends FormBase {
       $form['account']["group"] = array(
         "#type" => "select",
         "#title" => t("Select user group"),
-        '#required' => TRUE,
         "#default_value" => '',
         '#states' => [
           'visible' => [
